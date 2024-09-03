@@ -17,7 +17,7 @@ export const GifApp = () => {
   useGSAP(()=>{
     let tl = gsap.timeline();
 
-    tl.from(".heading, input, .header-grid > p, .header-grid > h2, .header-grid > img, .card-grid", {
+    tl.from("input, .header-grid > p, .header-grid > h2, .header-grid > img, .card-grid", {
       duration: 1,
       opacity: 0,
       ease: "power1.inOut"
@@ -27,8 +27,6 @@ export const GifApp = () => {
       y: -200,
       ease: "bounce"
     });
-
-
   }, []);
 
   const onCategory = (newCategory) => {

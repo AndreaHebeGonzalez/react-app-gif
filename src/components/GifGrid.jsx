@@ -24,7 +24,7 @@ export const GifGrid =  ({ category, deleteCategory }) => {
         });
         
         ScrollTrigger.refresh();
-    }, [isLoading]);
+    }, [images]);
 
 
     const handleDelete = () => {
